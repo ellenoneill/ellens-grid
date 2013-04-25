@@ -50,14 +50,14 @@ For better responsive control define a custom component class on the wrapper. If
 		</div>
 	</div>	
 	
-You don't have to use the presentational classes at all, you can fully customize the grid by using your own semantic classes, like 'menu' or 'sidebar'.
+You don't have to use the presentational classes, you can fully customize the grid by using your own semantic classes, like 'menu' or 'sidebar'.
 
-	<div class="container">
-		<div class="sidebar">
+	<div class="wrapper">
+		<div class="column sidebar">
 			<div class="gutter">
 			</div>
 		</div>
-		<div class="main">
+		<div class="column main">
 			<div class="gutter">
 			</div>
 		</div>
