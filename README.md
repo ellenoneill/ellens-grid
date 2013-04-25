@@ -29,21 +29,41 @@ Marked up like this:
 ### Wrappers
 Block level elements by default adjust to the width of the parent element. Think of it as 100% wide. The wrapper doesn't have any semantic meaning, it's a generic wrapper, so a div will do. The wrapper is used for fixing the white-space issue on inline-blocks. A single column doesn't need a wrapper.
 
+	<div class="column">
+		<div class="gutter">
+		</div>
+	</div>
+
 ### Columns
 Columns are defined by proportion, for instance `column-1of2` (one half), `column-1of3` (one third), `column-2of3` (two thirds) and can be easily re-used as many times as you like, even when nested or applied to something other then a div, like a link. Just make sure the column fractions add up to 1.
 
-	<div class="wrapper">
-		<div class="column column-1of3">
+For better responsive control define a custom component class on the wrapper. If it is not wrapped, define it on the column. You can define custom classes on both the wrapper and the columns. It's not advisable to add classes to the gutter.
+
+	<div class="wrapper your-wrapper">
+		<div class="column column-1of3 your-column">
 			<div class="gutter">
 			</div>
 		</div>
-		<div class="column column-2of3">
+		<div class="column column-2of3 your-column">
+			<div class="gutter">
+			</div>
+		</div>
+	</div>	
+	
+You don't have to use the presentational classes at all, you can fully customize the grid by using your own semantic classes, like 'menu' or 'sidebar'.
+
+	<div class="container">
+		<div class="sidebar">
+			<div class="gutter">
+			</div>
+		</div>
+		<div class="main">
 			<div class="gutter">
 			</div>
 		</div>
 	</div>
 
-You don't have to use presentational classes, you can use your own semantic classes, like 'menu' or 'sidebar', make sure to add the classes to the style with the desired width
+Make sure to add the classes to the styles with the desired width, keeping your grid styles grouped together.
 
 	.column-1of3,
 	.sidebar {
@@ -109,34 +129,6 @@ Small  | > 480px    |
 Medium | > 768px    | 
 Large  | > 996px    | 
 Huge   | > 1280px   | 
-
-### Components
-For better responsive control define a minimum of one custom class per component on the wrapper and/or column. It's not advisable to add custom classes to the gutter.
-
-	<div class="column custom-column">
-		<div class="gutter">
-		</div>
-	</div>
-	<div class="wrapper custom-wrapper">
-		<div class="column column-1of3">
-			<div class="gutter">
-			</div>
-		</div>
-		<div class="column column-2of3">
-			<div class="gutter">
-			</div>
-		</div>
-	</div>
-	<div class="wrapper custom-wrapper">
-		<div class="column column-1of3 custom-column">
-			<div class="gutter">
-			</div>
-		</div>
-		<div class="column column-2of3 custom-column">
-			<div class="gutter">
-			</div>
-		</div>
-	</div>	
 
 ### Browser support
 Works in Internet Explorer 8 and above. Internet Explorer 7 has a few issues with inline-block. If you need support for Internet Explorer 7, you can add this by declar­ing `zoom: 1; display: inline;` using conditional classes. [^5]
