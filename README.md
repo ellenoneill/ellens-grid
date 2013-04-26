@@ -27,7 +27,7 @@ Marked up like this:
 	</div>
 
 ### Wrappers
-Block level elements by default adjust to the width of the parent element. Think of it as 100% wide. The wrapper doesn't have any semantic meaning, it's a generic wrapper, so a div will do. The wrapper is used for fixing the white-space issue on inline-blocks. A single column doesn't need a wrapper.
+Block level elements by default adjust to the width of the parent element. Think of it as 100% wide. The wrapper doesn't have any semantic meaning, it's a generic wrapper, so a `div` will do. The wrapper is used for fixing the white-space issue on inline-blocks. A single column doesn't need a wrapper.
 
 	<div class="column">
 		<div class="gutter">
@@ -35,7 +35,7 @@ Block level elements by default adjust to the width of the parent element. Think
 	</div>
 
 ### Columns
-Columns are defined by proportion, for instance `column-1of2` (one half), `column-1of3` (one third), `column-2of3` (two thirds) and can be easily re-used as many times as you like, even when nested or applied to something other then a div, like a link. Just make sure the column fractions add up to 1.
+Columns are defined by proportion, for instance `column-1of2` (one half), `column-1of3` (one third), `column-2of3` (two thirds) and can be easily re-used as many times as you like, even when nested or applied to something more sematic then a `div`, like a `section` or `article`. Just make sure the column fractions add up to 1.
 
 For better responsive control define a custom component class on the wrapper. If it is not wrapped, define it on the column. You can define custom classes on both the wrapper and the columns. It's not advisable to add classes to the gutter.
 
@@ -88,10 +88,10 @@ Columns can be indented by adding the `.indent` class, thereby adding whitespace
 	</div>
 
 ### Gutters
-The biggest stumbling block to grids are gutters. The grid is flexible by using percentages for widths. We're keeping things relatively simple by using fixed margins for gutters. The distance between columns will remain equal at every breakpoint. We've used a dedicated div for the gutter to allow margins to be mixed with paddings.
+The biggest stumbling block to grids are gutters. The grid is flexible by using percentages for widths. I keep things relatively simple by using fixed margins for gutters. The distance between columns will remain equal at every breakpoint. Since the gutter doesn't have any semantic meaning, I've used a `div` to allow margins to be mixed with paddings. The margins and paddings can be adapted to the desired values.
 
 #### Islands
-This object is a single `.island` class used to box in content, leaving it closed on all sides like an island with padding added for extra whitespace.
+I extended the `.column` class by adding a modifier to it, the `.island` class. This class is used to box in content, leaving it closed on all sides like an island. It adds a padding to the gutter, you can define a background color or border. This serves primarily as an example, you might as well use your own component class.
 
 	<div class="column island">
 		<div class="gutter">
@@ -99,7 +99,7 @@ This object is a single `.island` class used to box in content, leaving it close
 	</div>
 
 #### No gutter
-Gutterless columns can be achieved by using the `.no-gutter` class on the wrapper, this class may very well be your own custom component class. I have removed the gutter div, but you could leave it in for any future adjustments.
+Gutterless columns can be achieved by using the `.no-gutter` class on the wrapper. This class may very well be your own component class. I have removed the gutter, but you could leave it in for any future adjustments.
 
 	<div class="wrapper no-gutter">
 		<div class="column column-1of3">		
