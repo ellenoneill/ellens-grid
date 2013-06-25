@@ -19,7 +19,6 @@ body {
 .island .gutter  {
 	background-color: #0B0E13;
 	color: #fff;
-	min-height: 125px;
 }
 .no-gutter .column {
 	background-color: #6FDFE0;

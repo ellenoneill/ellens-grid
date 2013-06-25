@@ -12,7 +12,9 @@ Huge	> 1280px
 /* Grid
 -------------------------------------------------- */
 body {
+	margin: 0;
 	padding: 10px;
+	-webkit-text-size-adjust: none; /* Prevent iPhone text enlargement */
 }
 *, *:after, *:before { /* Apply natural box layout model to all elements */
 	-webkit-box-sizing: border-box;
@@ -21,17 +23,11 @@ body {
 }
 .wrapper {
 	width: 100%;
-	display: block;
+	display: table; /* Fix for inline-block issue on Android */
 	font-size: 0;
 	list-style: none;
 	padding: 0;
 	margin: 0;
-}
-.wrapper:before, 
-.wrapper:after { /* Clearfix */
-	content: ""; 
-	display: table; 
-	clear: both;
 }
 .column {
 	width: 100%;
@@ -112,23 +108,23 @@ body {
 	.column-1of3,
 	.column-1of5,
 	.column-1of6 {
-		width: 33.33%;
+		width: 33.333333%;
 	}
 	.column-1of3 + .column-1of3:last-child { /* Separate from the style above due to IE8 grouping selectors bug */
-		width: 33.33%;
+		width: 33.333333%;
 	}
 	.column-1of5 + .column-1of5:last-child {
-		width: 66.66%;
+		width: 66.666666%;
 	}
 	.column-2of3,
 	.column-4of5,
 	.column-5of6 {
-		width: 66.66%;
+		width: 66.666666%;
 	}
 	.column-2of3.indent,
 	.column-4of5.indent,
 	.column-5of6.indent {
-		margin-left: 33.33%;
+		margin-left: 33.333333%;
 	}
 	.column-2of5 {
 		width: 40%;
@@ -168,21 +164,21 @@ body {
 		margin-left: 20%;
 	}
 	.column-1of6 {
-		width: 16.66%;
+		width: 16.666666%;
 	}
 	.column-5of6 {
-		width: 83.33%;
+		width: 83.333333%;
 	}
 	.column-5of6.indent {
-		margin-left: 16.66%;
+		margin-left: 16.666666%;
 	}
 }
 @media only screen and (min-width: 1280px) {
 	.column .column-1of3 {
-		width: 33.33%;
+		width: 33.333333%;
 	}
 	.column .column-1of3 + .column-1of3:last-child { /* Separate from the style above due to IE8 grouping selectors bug */
-		width: 33.33%;
+		width: 33.333333%;
 	}
 	.column .column-1of4 {
 		width: 25%;

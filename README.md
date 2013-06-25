@@ -17,20 +17,13 @@ There are four features:
 - Gutters
 - Islands
 
-Marked up like this:
+### Wrappers
+Block level elements by default adjust to the width of the parent element. Think of it as 100% wide. The wrapper doesn't have any semantic meaning, it's a generic wrapper, so a `div` will do. The wrapper is used for fixing the white-space issue on inline-blocks. A single column doesn't necessarily need a wrapper.
 
 	<div class="wrapper">
 		<div class="column island">
 			<div class="gutter">
 			</div>
-		</div>
-	</div>
-
-### Wrappers
-Block level elements by default adjust to the width of the parent element. Think of it as 100% wide. The wrapper doesn't have any semantic meaning, it's a generic wrapper, so a `div` will do. The wrapper is used for fixing the white-space issue on inline-blocks. A single column doesn't need a wrapper.
-
-	<div class="column">
-		<div class="gutter">
 		</div>
 	</div>
 
@@ -131,9 +124,7 @@ Large  | > 996px    |
 Huge   | > 1280px   | 
 
 ### Browser support
-Works in Internet Explorer 8 and above. Internet Explorer 7 has a few issues with inline-block. If you need support for Internet Explorer 7, you can add this by declar­ing `zoom: 1; display: inline;` using conditional classes. [^5]
-
-[^5]: [Introducing “safe CSS hacks”](http://mathiasbynens.be/notes/safe-css-hacks)
+Works in latest versions of Google Chrome, Safari and Firefox and Internet Explorer 8 and above.
 
 ### About
 Whipped together by [Ellen O'Neill](http://twitter.com/eliun), creative front-end developer at Dutch internet agency [Mirabeau](http://www.mirabeau.nl).
