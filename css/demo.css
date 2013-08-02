@@ -1,0 +1,113 @@
+/* Demo only
+-------------------------------------------------- */
+html {
+    background-color: #8CFFFF;
+}
+body {
+    font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+}
+h1 {
+    margin-bottom: 0;
+}
+ul {
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+}
+p {
+    margin: 0;
+}
+a {
+    color: #000;
+}
+header,
+footer {
+    display: block; /* Correct 'block' display not defined in IE 8/9 */
+}
+.header-full,
+.footer-full,
+.gutter {
+    /* Striping */
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAIAAABLMMCEAAAAMklEQVQImWPMv/9AVkGeARUwYQo9fvCQCVNIVkGeCVOIgYGBCVMIIYosBBVFE2JgYAAAD6cUmC/tHR0AAAAASUVORK5CYII=);
+}
+.header-full {
+    margin-bottom: 10px;
+}
+.footer-full {
+    margin-top: 10px;
+}
+.header-full .gutter,
+.footer-full .gutter {
+    background-image: none;
+}
+.header-max .gutter,
+.footer-max .gutter {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.restrainer {
+    padding: 0 10px;
+}
+.wrapper-1of3,
+.wrapper-2of3 {
+    border: 1px solid #6FDFE0;
+    margin: 0 0 -1px -1px;
+}
+.module {
+    text-decoration: none;
+}
+.gutter {
+    min-height: 125px;
+}
+.island .gutter  {
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid #6FDFE0;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.07);
+}
+.no-gutter .module {
+    margin-right: -1px;
+}
+
+@media only screen and (min-width: 1280px) {
+    .header-max,
+    .footer-max,
+    .restrainer {
+        max-width: 1280px;
+        float: none;
+        clear: both;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+    .header-max .gutter,
+    .footer-max .gutter {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .restrainer {
+        padding: 0;
+    }
+}
+
+/* Clearfix
+-------------------------------------------------- */
+body:before, body:after,
+header:before, header:after,
+footer:before, footer:after,
+.restrainer:before, .restrainer:after,
+.wrapper:before, .wrapper:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+body:after,
+header:after,
+footer:after,
+.restrainer:after,
+.wrapper:after {
+    clear: both;
+}
