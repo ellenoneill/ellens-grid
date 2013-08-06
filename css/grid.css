@@ -16,6 +16,9 @@ html {
 .module {
     text-align: left;
 }
+.gutter > *:last-child {
+    margin-bottom: 0;
+}
 @media only screen and (min-width: 480px) {
     .wrapper-1of2,
     .wrapper-1of3,
