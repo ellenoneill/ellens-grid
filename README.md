@@ -126,7 +126,7 @@ Works in latest versions of Google Chrome, Safari, Firefox and Internet Explorer
 #### Polyfills
 To enable the responsive grid in Internet Explorer 8 you need to add the Respond.js polyfill for min/max-width CSS3 media queries [^4] and the Selectivizr polyfill for CSS3 selectors [^5].
 
-[^4]: [Respond.js by Scott Jehl](https://github.com/scottjehl/Respond) 
+[^4]: [Respond.js by Scott Jehl](https://github.com/scottjehl/Respond)  
 [^5]: [Selectivizr by Keith Clark](http://selectivizr.com) 
 
 ### Quick tip
