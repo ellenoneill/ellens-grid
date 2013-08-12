@@ -17,6 +17,10 @@ There are four features:
 - Gutters
 - Islands
 
+### Demo
+[http://ellenoneill.github.io/the-grid](http://ellenoneill.github.io/the-grid)
+
+
 ### Wrappers
 Wrappers can be defined by proportion, for instance `wrapper-1of2` (one half), `wrapper-1of3` (one third), `wrapper-2of3` (two thirds) [^1] and can be easily re-used as many times as you like, even when nested or applied to something more sematic then a `div`, like a `main` or `sidebar`. Just make sure the fractions add up to 1.
 
