@@ -21,36 +21,42 @@
         </div>
     </header>
     <div class="restrainer">
-        <div class="wrapper wrapper-2of3">
-            <div class="module">
-                <div class="gutter">
-                    <p>.wrapper-2of3 > .module</p>
-                </div>
-            </div>
-            <div class="wrapper">
-                <div class="module module-1of2">
+        <div class="wrapper">
+            <div class="grid grid-2of3">
+                <div class="module">
                     <div class="gutter">
-                        <p>.wrapper-2of3 > .wrapper > .module-1of2</p>
+                        <p>.grid-2of3 > .module</p>
                     </div>
                 </div>
-                <div class="module module-1of2">
-                    <div class="gutter">
-                        <p>.wrapper-2of3 > .wrapper > .module-1of2</p>
+                <div class="wrapper">
+                    <div class="grid grid-1of2">
+                        <div class="module">
+                            <div class="gutter">
+                                <p>.grid-2of3 > .wrapper > .grid-1of2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-1of2">
+                        <div class="module">
+                            <div class="gutter">
+                                <p>.grid-2of3 > .wrapper > .grid-1of2</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="wrapper wrapper-1of3">
-            <div class="module">
-                <div class="gutter">
-                    <p>.wrapper-1of3 > .module</p>
-                    <p>(sidebar)</p>
+            <div class="grid grid-1of3">
+                <div class="module">
+                    <div class="gutter">
+                        <p>.grid-1of3 > .module</p>
+                        <p>(sidebar)</p>
+                    </div>
                 </div>
-            </div>
-            <div class="module">
-                <div class="gutter">
-                    <p>.wrapper-1of3 > .module</p>
-                    <p>(sidebar)</p>
+                <div class="module">
+                    <div class="gutter">
+                        <p>.grid-1of3 > .module</p>
+                        <p>(sidebar)</p>
+                    </div>
                 </div>
             </div>
         </div>
