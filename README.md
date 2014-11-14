@@ -73,7 +73,7 @@ A module can be applied to something more sematic then a `div`, like a `section`
 I moved back from inline-block elements to floats due to a white-space bug on Android. This means they need to be cleared with clearfix solutions or `overflow: hidden;`. I used the `:nth-child` pseudo-selector to clear floated elements at certain breakpoints.
 
 #### Offset
-Grids can be offset by adding the `.offset-left`, `.offset-right` or `.offset-both` (= centered) class, thereby adding whitespace equal to the width of a module or sidebar to the left. In the example below the width of a `.grid-1of6` is added as left margin.
+Grids can be offset by adding the `.offset-left`, `.offset-right` or `.offset-both` (= centered) class, thereby adding whitespace equal to the width of a module or sidebar. In the example below the width of a `.grid-1of6` is added as left margin.
 
     <div class="grid grid-5of6 offset-left">
     	<div class="module">
