@@ -1,7 +1,7 @@
 /* Demo only
 -------------------------------------------------- */
 html {
-    background-color: #8CFFFF;
+    background-color: #FAC7B4;
 }
 body {
     font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
@@ -30,7 +30,7 @@ footer {
 .header-full,
 .footer-full,
 .module > .gutter {
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAIAAABLMMCEAAAAMklEQVQImWPMv/9AVkGeARUwYQo9fvCQCVNIVkGeCVOIgYGBCVMIIYosBBVFE2JgYAAAD6cUmC/tHR0AAAAASUVORK5CYII=); /* Striping */
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAIAAABLMMCEAAAAMklEQVQImWP8s2IuAwPDP3lxBiTAhEXo4UsmTCGoWjShf/LiTJhCCLXIQlBRNCEGBgYAnOgVg2PDcrEAAAAASUVORK5CYII=);
 }
 .header-full {
     margin-bottom: 10px;
@@ -65,16 +65,14 @@ footer {
     min-height: 125px;
 }
 .island .gutter {
-    background-color: #8CFFFF;
+    background-color: #FFE1C9;
     background-image: none;
-    border: 1px solid #6FDFE0;
     box-shadow: 0 2px 3px 0 rgba(0,0,0,.07);
 }
 .wrapper > .gutter {
     box-shadow: 0 2px 3px 0 rgba(0,0,0,.07);
 }
 .gutter .island .gutter {
-    margin: -1px; /* Overlap borders */
     box-shadow: none;
 }
 
