@@ -29,9 +29,8 @@ footer {
 }
 .header-full,
 .footer-full,
-.gutter {
-    /* Striping */
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAIAAABLMMCEAAAAMklEQVQImWPMv/9AVkGeARUwYQo9fvCQCVNIVkGeCVOIgYGBCVMIIYosBBVFE2JgYAAAD6cUmC/tHR0AAAAASUVORK5CYII=);
+.module > .gutter {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAIAAABLMMCEAAAAMklEQVQImWPMv/9AVkGeARUwYQo9fvCQCVNIVkGeCVOIgYGBCVMIIYosBBVFE2JgYAAAD6cUmC/tHR0AAAAASUVORK5CYII=); /* Striping */
 }
 .header-full {
     margin-bottom: 10px;
@@ -65,14 +64,18 @@ footer {
 .gutter {
     min-height: 125px;
 }
-.island .gutter  {
-    background-color: transparent;
+.island .gutter {
+    background-color: #8CFFFF;
     background-image: none;
     border: 1px solid #6FDFE0;
     box-shadow: 0 2px 3px 0 rgba(0,0,0,.07);
 }
-.no-gutter .module {
-    margin-right: -1px;
+.wrapper > .gutter {
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.07);
+}
+.gutter .island .gutter {
+    margin: -1px; /* Overlap borders */
+    box-shadow: none;
 }
 
 @media only screen and (min-width: 1280px) {
@@ -93,6 +96,12 @@ footer {
     }
     .restrainer {
         padding: 0;
+    }
+}
+
+@media only screen and (min-width: 996px) {
+    .gutter .island .gutter {
+        margin: 0 -1px; /* Overlap borders */
     }
 }
 

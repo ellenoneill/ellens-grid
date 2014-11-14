@@ -14,7 +14,14 @@ html {
 }
 .module {
     text-align: left;
-    overflow: hidden; /* Clearfix */
+}
+.module:before,
+.module:after,
+.gutter:before,
+.gutter:after { /* Clearfix */
+	content: "";
+	display: table;
+	clear: both;
 }
 .gutter > *:last-child {
     margin-bottom: 0;
@@ -129,9 +136,6 @@ html {
     }
     .grid-5of6.offset {
         margin-left: 16.666666%;
-    }
-    .no-gutter .gutter {
-        margin: 0;
     }
     .grid-1of4:nth-child(3),
     .grid-1of3:nth-child(4),
