@@ -23,8 +23,10 @@ html {
 	display: table;
 	clear: both;
 }
-.gutter > *:last-child {
-    margin-bottom: 0;
+.module > .gutter > *:last-child,
+.module > .gutter > *:last-child > *:last-child,
+.module > .gutter > *:last-child > *:last-child > *:last-child { /* Unspacing the bottom of modules */
+	margin: 0;
 }
 @media only screen and (min-width: 480px) {
     .grid-1of2,
