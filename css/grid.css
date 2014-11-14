@@ -42,10 +42,6 @@ html {
     .grid-5of6{
         width: 50%;
     }
-    .grid-1of3 + .grid-1of3:last-child,
-    .grid-1of5 + .grid-1of5:last-child {
-        width: 100%;
-    }
     .grid-1of3:nth-child(3),
     .grid-1of4:nth-child(3),
     .grid-1of5:nth-child(3),
@@ -70,12 +66,6 @@ html {
     .grid-1of5,
     .grid-1of6 {
         width: 33.333333%;
-    }
-    .grid-1of3 + .grid-1of3:last-child {
-        width: 33.333333%;
-    }
-    .grid-1of5 + .grid-1of5:last-child {
-        width: 66.666666%;
     }
     .grid-2of3,
     .grid-4of5,
@@ -119,9 +109,6 @@ html {
         margin-left: 25%;
     }
     .grid-1of5 {
-        width: 20%;
-    }
-    .grid-1of5 + .grid-1of5:last-child {
         width: 20%;
     }
     .grid-4of5 {
