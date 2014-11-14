@@ -6,8 +6,9 @@
 .island .gutter {
     padding: 10px;
 }
-@media only screen and (min-width: 768px) {
-    .no-gutter {
-        padding: 10px;
-    }
+.wrapper > .gutter {
+    margin: 10px;
+}
+.gutter .island .gutter {
+    margin: 0;
 }
