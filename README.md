@@ -11,7 +11,8 @@ This grid consists of basic responsive HTML and CSS, no pre-processing applied (
 
 There are four features:
 
-- Wrappers
+- Restrainers
+- Containers
 - Modules
 - Gutters
 - Islands
@@ -19,12 +20,13 @@ There are four features:
 ### Demo
 [http://ellenoneill.github.io/the-grid](http://ellenoneill.github.io/the-grid)
 
+### Restrainers
+Todo
 
-### Wrappers
-The purpose of a wrapper is to contain multiple grids and to apply a specific container class when necessary.
-The wrapper class can be applied to something more sematic then a `div`, like a `main` or `sidebar`. For better responsive control define a custom class on the wrapper.
+### Containers
+The purpose of a container is to contain multiple grids. The container class can be applied to something more sematic then a `div`, like a `main` or `sidebar`. For better responsive control define a custom class on the wrapper.
 
-    <div class="wrapper your-wrapper">
+    <div class="container your-container">
     	<div class="grid">	
         	<div class="module">
             	<div class="gutter">
@@ -36,7 +38,7 @@ The wrapper class can be applied to something more sematic then a `div`, like a 
 ### Grids
 Grids are defined by proportion, for instance `grid-1of2` (one half), `grid-1of3` (one third), `grid-2of3` (two thirds) and can be easily re-used as many times as you like, even when nested or applied to something more sematic then a `div`, like a `section` or `article`. Just make sure the module fractions add up to 1. It's not advisable to add custom classes to the grid.
 
-    <div class="wrapper your-wrapper">
+    <div class="container your-container">
     	<div class="grid grid-1of3">	
         	<div class="module">
             	<div class="gutter">
@@ -54,7 +56,7 @@ Grids are defined by proportion, for instance `grid-1of2` (one half), `grid-1of3
 ### Modules
 A module can be applied to something more sematic then a `div`, like a `section` or `article`. For better responsive control define a custom class on the module.
 
-    <div class="wrapper your-wrapper">
+    <div class="container your-container">
     	<div class="grid grid-1of3">	
         	<div class="module your-module">
             	<div class="gutter">
@@ -91,24 +93,6 @@ I extended the `.module` class by adding a modifier to it, the `.island` class. 
     <div class="module island">
         <div class="gutter">
         </div>
-    </div>
-
-#### No gutter
-Gutterless modules can be achieved by using the `.no-gutter` class on the wrapper, this adds a padding to the wrapper. I kept the gutter `div` in place because it's likely some padding is still needed.
-
-    <div class="wrapper no-gutter">
-    	<div class="grid grid-1of3">	
-        	<div class="module">
-            	<div class="gutter">
-            	</div>
-        	</div>
-        </div>     
-    	<div class="grid grid-2of3">	
-        	<div class="module">
-            	<div class="gutter">
-            	</div>
-        	</div>
-        </div>     
     </div>
 
 ### Responsive

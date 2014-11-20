@@ -50,11 +50,11 @@ footer {
 .restrainer {
     padding: 0 10px;
 }
-.example .wrapper {
+.example .container {
     border: 1px solid #E88087;
     margin: 0 0 -1px -1px;
 }
-.example .wrapper .wrapper {
+.example .container .container {
     border: 0;
     margin: 0;
 }
@@ -70,7 +70,7 @@ footer {
     border: 1px solid #E88087;
     box-shadow: 0 2px 3px 0 rgba(0,0,0,.07);
 }
-.wrapper > .gutter {
+.container > .gutter {
     box-shadow: 0 2px 3px 0 rgba(0,0,0,.07);
 }
 .gutter .island .gutter {
@@ -111,7 +111,7 @@ body:before, body:after,
 header:before, header:after,
 footer:before, footer:after,
 .restrainer:before, .restrainer:after,
-.wrapper:before, .wrapper:after {
+.container:before, .container:after {
     content: " ";
     display: table;
     clear: both;
@@ -120,6 +120,6 @@ body:after,
 header:after,
 footer:after,
 .restrainer:after,
-.wrapper:after {
+.container:after {
     clear: both;
 }

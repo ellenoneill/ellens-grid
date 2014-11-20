@@ -9,7 +9,7 @@
 .island .gutter {
     padding: 10px;
 }
-.wrapper > .gutter {
+.container > .gutter {
     margin: 10px;
 }
 .gutter .island .gutter {
