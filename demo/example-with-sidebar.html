@@ -8,18 +8,43 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body class="example">
-    <header class="module header-full">
+    <div class="ribbon">
         <div class="gutter">
-            <p>header.module</p>
-            <p>(full-width)</p>
+            <div class="module">
+                <div class="gutter">
+                    <p>.ribbon > .gutter > .module</p>
+                    <p>(header)</p>
+                </div>
+            </div>
         </div>
-    </header>
-    <header class="module header-max">
+    </div>
+    <div class="ribbon">
         <div class="gutter">
-            <p>header.module</p>
-            <p>(max-width)</p>
+            <div class="restrainer">
+                <div class="grid grid-1of3">
+                    <div class="module">
+                        <div class="gutter">
+                            <p>.ribbon + .ribbon > .gutter > .restrainer > .grid-1of3</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-1of3">
+                    <div class="module">
+                        <div class="gutter">
+                            <p>.ribbon + .ribbon > .gutter > .restrainer > .grid-1of3</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-1of3">
+                    <div class="module">
+                        <div class="gutter">
+                            <p>.ribbon + .ribbon > .gutter > .restrainer > .grid-1of3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </header>
+    </div>
     <div class="restrainer">
         <div class="container">
             <div class="grid grid-2of3">
@@ -32,14 +57,14 @@
                     <div class="grid grid-1of2">
                         <div class="module">
                             <div class="gutter">
-                                <p>.grid-2of3 > .wrapper > .grid-1of2</p>
+                                <p>.grid-2of3 > .container > .grid-1of2</p>
                             </div>
                         </div>
                     </div>
                     <div class="grid grid-1of2">
                         <div class="module">
                             <div class="gutter">
-                                <p>.grid-2of3 > .wrapper > .grid-1of2</p>
+                                <p>.grid-2of3 > .container > .grid-1of2</p>
                             </div>
                         </div>
                     </div>
@@ -61,17 +86,17 @@
             </div>
         </div>
     </div>
-    <footer class="module footer-max">
+    <div class="ribbon">
         <div class="gutter">
-            <p>footer.module</p>
-            <p>(max-width)</p>
+            <div class="restrainer">
+                <div class="module">
+                    <div class="gutter">
+                        <p>.ribbon > .gutter > .restrainer > .module</p>
+                        <p>(footer)</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer>
-    <footer class="module footer-full">
-        <div class="gutter">
-            <p>footer.module</p>
-            <p>(full-width)</p>
-        </div>
-    </footer>
+    </div>
 </body>
 </html>

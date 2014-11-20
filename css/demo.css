@@ -23,29 +23,14 @@ p {
 a {
     color: #000;
 }
-header,
-footer {
-    display: block; /* Correct 'block' display not defined in IE 8/9 */
+.ribbon > .gutter {
+    background-color: rgba(232,128,135,.5);
 }
-.header-full,
-.footer-full,
+.ribbon + .ribbon > .gutter {
+    background-color: rgba(232,128,135,.3);
+}
 .module > .gutter {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAIAAABLMMCEAAAAMklEQVQImWP8s2IuAwPDP3lxBiTAhEXo4UsmTCGoWjShf/LiTJhCCLXIQlBRNCEGBgYAnOgVg2PDcrEAAAAASUVORK5CYII=);
-}
-.header-full {
-    margin-bottom: 10px;
-}
-.footer-full {
-    margin-top: 10px;
-}
-.header-full .gutter,
-.footer-full .gutter {
-    background-image: none;
-}
-.header-max .gutter,
-.footer-max .gutter {
-    margin-left: 20px;
-    margin-right: 20px;
 }
 .restrainer {
     padding: 0 10px;
@@ -79,22 +64,12 @@ footer {
 }
 
 @media only screen and (min-width: 1280px) {
-    .header-max,
-    .footer-max,
     .restrainer {
         max-width: 1280px;
         float: none;
         clear: both;
         margin-left: auto;
         margin-right: auto;
-        padding: 0;
-    }
-    .header-max .gutter,
-    .footer-max .gutter {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    .restrainer {
         padding: 0;
     }
 }
@@ -108,8 +83,6 @@ footer {
 /* Clearfix
 -------------------------------------------------- */
 body:before, body:after,
-header:before, header:after,
-footer:before, footer:after,
 .restrainer:before, .restrainer:after,
 .container:before, .container:after {
     content: " ";
@@ -117,8 +90,6 @@ footer:before, footer:after,
     clear: both;
 }
 body:after,
-header:after,
-footer:after,
 .restrainer:after,
 .container:after {
     clear: both;

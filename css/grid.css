@@ -5,6 +5,15 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+.ribbon + .ribbon > .gutter {
+    margin-top: 0;
+}
+.ribbon:first-child > .gutter { /* Unspacing the top of the first ribbon */
+	margin-top: 0;
+}
+.ribbon:last-child > .gutter { /* Unspacing the bottom of the last ribbon */
+	margin-bottom: 0;
+}
 .restrainer {
     display: table; /* Horizontal center-alignment */
     margin-left: auto;
@@ -15,6 +24,8 @@
     width: 100%;
     float: left;
 }
+.ribbon:before,
+.ribbon:after,
 .module:before,
 .module:after,
 .gutter:before,
