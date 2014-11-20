@@ -1,5 +1,8 @@
 /* Config
 -------------------------------------------------- */
+.restrainer {
+    max-width: 1280px;
+}
 .gutter {
     margin: 10px;
 }

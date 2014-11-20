@@ -5,15 +5,15 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-html {
-    text-align: center; /* For horizontal centering */
+.restrainer {
+    display: table; /* Horizontal center-alignment without text-align:center on the outer-wrapper */
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 .grid {
     width: 100%;
     float: left;
-}
-.module {
-    text-align: left;
 }
 .module:before,
 .module:after,
