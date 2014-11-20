@@ -61,7 +61,6 @@ a {
 .gutter .island .gutter {
     margin: -1px; /* Overlap borders */
     box-shadow: none;
-    margin: 0;
 }
 
 @media only screen and (min-width: 1280px) {
