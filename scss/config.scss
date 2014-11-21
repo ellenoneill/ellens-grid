@@ -22,7 +22,7 @@ $gutter-size: 10px;
     }
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 30em) { // 480px
     .ribbon {
         > .gutter {
             padding: $gutter-size*2 0;
@@ -37,7 +37,7 @@ $gutter-size: 10px;
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 48em) { // 768px
     .ribbon {
         > .gutter {
             padding: $gutter-size*3 0;
@@ -49,7 +49,7 @@ $gutter-size: 10px;
     }
 }
 
-@media only screen and (min-width: 1360px) {
+@media only screen and (min-width: 85em) { // 1360px
     .ribbon > .gutter {
         padding: $gutter-size*3;
     }

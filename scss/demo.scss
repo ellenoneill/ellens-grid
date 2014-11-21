@@ -64,7 +64,13 @@ a {
     }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 62.25em) { // 996px
+    .gutter .island .gutter {
+        margin: 0 -1px; // Overlap borders
+    }
+}
+
+@media only screen and (min-width: 80em) { // 1280px
     .restrainer {
         max-width: 1280px;
         float: none;
@@ -72,11 +78,5 @@ a {
         margin-left: auto;
         margin-right: auto;
         padding: 0;
-    }
-}
-
-@media only screen and (min-width: 996px) {
-    .gutter .island .gutter {
-        margin: 0 -1px; // Overlap borders
     }
 }

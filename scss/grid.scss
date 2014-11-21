@@ -46,7 +46,7 @@ body,
         }
     }
 }
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 30em) { // 480px
     .grid-1of2,
     .grid-1of3,
     .grid-2of3,
@@ -74,7 +74,7 @@ body,
         }
     }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 48em) { // 768px
     .grid-1of2,
     .grid-1of4,
     .grid-3of4 {
@@ -135,7 +135,7 @@ body,
         }
     }
 }
-@media only screen and (min-width: 996px) {
+@media only screen and (min-width: 62.25em) { // 996px
     .grid-1of4 {
         width: 25%;
     }
