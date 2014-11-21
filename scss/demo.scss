@@ -1,0 +1,82 @@
+html {
+    background-color: #FAC7B4;
+}
+body {
+    font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+}
+h1 {
+    margin-bottom: 0;
+}
+ul {
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+}
+p {
+    margin: 0;
+}
+a {
+    color: #000;
+}
+.ribbon {
+    > .gutter {
+        background-color: rgba(232,128,135,.5);
+    }
+    + .ribbon > .gutter {
+        background-color: rgba(232,128,135,.3);
+    }
+}
+.gutter {
+    min-height: 125px;
+    .module > & {
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpDN0ZCRjI3OTY4RTMxMUU0OEQzQ0I2RkM1MjBCQzBFMCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpDN0ZCRjI3QTY4RTMxMUU0OEQzQ0I2RkM1MjBCQzBFMCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkM3RkJGMjc3NjhFMzExRTQ4RDNDQjZGQzUyMEJDMEUwIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkM3RkJGMjc4NjhFMzExRTQ4RDNDQjZGQzUyMEJDMEUwIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+K1Zn4AAAADtJREFUeNpi/LNi7n8GIGAOT2JkQANMuCT+rpz3n/H///8M2CTgOrFJgExjwiWBohNdAi6JTQIEAAIMAGBBHkpA4UZiAAAAAElFTkSuQmCC);
+    }
+    .ribbon .module > & {
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpDN0ZCRjI3RDY4RTMxMUU0OEQzQ0I2RkM1MjBCQzBFMCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpDN0ZCRjI3RTY4RTMxMUU0OEQzQ0I2RkM1MjBCQzBFMCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkM3RkJGMjdCNjhFMzExRTQ4RDNDQjZGQzUyMEJDMEUwIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkM3RkJGMjdDNjhFMzExRTQ4RDNDQjZGQzUyMEJDMEUwIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+39V12AAAADFJREFUeNpi/HV8y38GCGBkQANMuCSA4D8TLglknRgSIE1MuCTQdWI4jAmXBAgABBgAsLcJg+GHf+gAAAAASUVORK5CYII=);
+    }
+}
+.example {
+    .container {
+        border: 1px solid #E88087;
+        margin: 0 0 -1px -1px;
+        .container {
+            border: 0;
+            margin: 0;
+        }
+    }
+}
+.gutter {
+    .island & {
+        background-color: #FAC7B4;
+        background-image: none;
+        border: 1px solid #E88087;
+        box-shadow: 0 2px 3px 0 rgba(0,0,0,.07);
+    }
+    .container > & {
+        box-shadow: 0 2px 3px 0 rgba(0,0,0,.07);
+    }
+    & .island & {
+        margin: -1px; // Overlap borders
+        box-shadow: none;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .restrainer {
+        max-width: 1280px;
+        float: none;
+        clear: both;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 996px) {
+    .gutter .island .gutter {
+        margin: 0 -1px; // Overlap borders
+    }
+}

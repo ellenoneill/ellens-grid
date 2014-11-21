@@ -1,12 +1,7 @@
 .DS_Store
 .sass-cache
-.grunt
 *.idea
 *.zip
 *.rar
 *.map
-*.sublime-workspace
-*.sublime-project
-npm-debug.log
-build
-node_modules
+config.codekit

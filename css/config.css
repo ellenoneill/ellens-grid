@@ -1,50 +1,49 @@
-/* Config
--------------------------------------------------- */
 .ribbon > .gutter {
-    padding: 10px 0;
-    margin: 10px 0;
+  padding: 10px 0;
+  margin: 10px 0;
 }
 .ribbon + .ribbon {
-    margin-top: -10px;
+  margin-top: -10px;
 }
+
 .restrainer {
-    max-width: 1280px;
+  max-width: 1280px;
 }
+
 .gutter {
-    margin: 10px;
+  margin: 10px;
 }
 .island .gutter {
-    padding: 10px;
+  padding: 10px;
 }
 .container > .gutter {
-    margin: 10px;
+  margin: 10px;
 }
 
 @media only screen and (min-width: 480px) {
-    .ribbon > .gutter {
-        padding: 20px 0;
-        margin: 20px 0;
-    }
-    .ribbon + .ribbon {
-        margin-top: -20px;
-    }
-    .restrainer {
-        padding: 0 10px;
-    }
-}
+  .ribbon > .gutter {
+    padding: 20px 0;
+    margin: 20px 0;
+  }
+  .ribbon + .ribbon {
+    margin-top: -20px;
+  }
 
+  .restrainer {
+    padding: 0 10px;
+  }
+}
 @media only screen and (min-width: 768px) {
-    .ribbon > .gutter {
-        padding: 30px 0;
-        margin: 30px 0;
-    }
-    .ribbon + .ribbon {
-        margin-top: -30px;
-    }
+  .ribbon > .gutter {
+    padding: 30px 0;
+    margin: 30px 0;
+  }
+  .ribbon + .ribbon {
+    margin-top: -30px;
+  }
 }
-
 @media only screen and (min-width: 1360px) {
-    .ribbon > .gutter {
-        padding: 30px;
-    }
+  .ribbon > .gutter {
+    padding: 30px;
+  }
 }

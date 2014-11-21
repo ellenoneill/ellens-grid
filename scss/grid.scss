@@ -1,0 +1,193 @@
+*, *:after, *:before { // Apply natural box layout model to all elements
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ribbon {
+    + .ribbon > .gutter {
+        margin-top: 0;
+    }
+    &:first-child > .gutter {
+        margin-top: 0; // Unspacing the top of the first ribbon
+    }
+    &:last-child > .gutter {
+        margin-bottom: 0; // Unspacing the bottom of the last ribbon
+    }
+}
+.restrainer {
+    display: table; // Horizontal center-alignment
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.grid {
+    width: 100%;
+    float: left;
+}
+body,
+.restrainer,
+.container,
+.ribbon,
+.module,
+.gutter {
+    &:before,
+    &:after { // Clearfix
+	    content: ' '; // The space content is one way to avoid an Opera bug when the contenteditable attribute is included anywhere else in the document. Otherwise it causes space to appear at the top and bottom of elements that are clearfixed.
+	    display: table; // The use of table rather than block is only necessary if using :before to contain the top-margins of child elements.
+        clear: both;
+    }
+}
+.module {
+    > .gutter {
+        > *:last-child,
+        > *:last-child > *:last-child,
+        > *:last-child > *:last-child > *:last-child {  // Unspacing the bottom of modules
+            margin-bottom: 0;
+        }
+    }
+}
+@media only screen and (min-width: 480px) {
+    .grid-1of2,
+    .grid-1of3,
+    .grid-2of3,
+    .grid-1of4,
+    .grid-3of4,
+    .grid-1of5,
+    .grid-2of5,
+    .grid-3of5,
+    .grid-4of5,
+    .grid-1of6,
+    .grid-5of6{
+        width: 50%;
+    }
+    [class^="grid-"],
+    [class*="grid-"] {
+        &.offset-left {
+            margin-left: 50%;
+        }
+        &.offset-right {
+            margin-right: 50%;
+        }
+        &.offset-both {
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+    }
+}
+@media only screen and (min-width: 768px) {
+    .grid-1of2,
+    .grid-1of4,
+    .grid-3of4 {
+        width: 50%;
+    }
+    .grid-1of2 {
+        &.offset-left {
+            margin-left: 50%;
+        }
+        &.offset-right {
+            margin-right: 50%;
+        }
+        &.offset-both {
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+    }
+    .grid-1of3,
+    .grid-1of5,
+    .grid-1of6 {
+        width: 33.333333%;
+    }
+    .grid-2of3,
+    .grid-4of5,
+    .grid-5of6 {
+        width: 66.666666%;
+    }
+    .grid-2of3,
+    .grid-4of5,
+    .grid-5of6 {
+        &.offset-left {
+            margin-left: 33.333333%;
+        }
+        &.offset-right {
+            margin-right: 33.333333%;
+        }
+        &.offset-both {
+            margin-left: 16.666666%;
+            margin-right: 16.666666%;
+        }
+    }
+    .grid-2of5 {
+        width: 40%;
+    }
+    .grid-3of5 {
+        width: 60%;
+    }
+    .grid-3of5 {
+        &.offset-left {
+            margin-left: 40%;
+        }
+        &.offset-right {
+            margin-right: 40%;
+        }
+        &.offset-both {
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+    }
+}
+@media only screen and (min-width: 996px) {
+    .grid-1of4 {
+        width: 25%;
+    }
+    .grid-3of4 {
+        width: 75%;
+    }
+    .grid-3of4 {
+        &.offset-left {
+            margin-left: 25%;
+        }
+        &.offset-right {
+            margin-right: 25%;
+        }
+        &.offset-both {
+            margin-left: 12.5%;
+            margin-right: 12.5%;
+        }
+    }
+    .grid-1of5 {
+        width: 20%;
+    }
+    .grid-4of5 {
+        width: 80%;
+    }
+    .grid-4of5 {
+        &.offset-left {
+            margin-left: 20%;
+        }
+        &.offset-right {
+            margin-right: 20%;
+        }
+        &.offset-both {
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+    }
+    .grid-1of6 {
+        width: 16.666666%;
+    }
+    .grid-5of6 {
+        width: 83.333333%;
+    }
+    .grid-5of6 {
+        &.offset-left {
+            margin-left: 16.666666%;
+        }
+        &.offset-right {
+            margin-right: 16.666666%;
+        }
+        &.offset-both {
+            margin-left: 8.333333%;
+            margin-right: 8.333333%;
+        }
+    }
+}

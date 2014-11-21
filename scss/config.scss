@@ -1,0 +1,56 @@
+$gutter-size: 10px;
+
+.ribbon {
+    > .gutter {
+        padding: $gutter-size 0;
+        margin: $gutter-size 0;
+    }
+    + .ribbon {
+        margin-top: -$gutter-size;
+    }
+}
+.restrainer {
+    max-width: 1280px;
+}
+.gutter {
+    margin: $gutter-size;
+    .island & {
+        padding: $gutter-size;
+    }
+    .container > & {
+        margin: $gutter-size;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .ribbon {
+        > .gutter {
+            padding: $gutter-size*2 0;
+            margin: $gutter-size*2 0;
+        }
+        + .ribbon {
+            margin-top: -$gutter-size*2;
+        }
+    }
+    .restrainer {
+        padding: 0 $gutter-size;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .ribbon {
+        > .gutter {
+            padding: $gutter-size*3 0;
+            margin: $gutter-size*3 0;
+        }
+        + .ribbon {
+            margin-top: -$gutter-size*3;
+        }
+    }
+}
+
+@media only screen and (min-width: 1360px) {
+    .ribbon > .gutter {
+        padding: $gutter-size*3;
+    }
+}
