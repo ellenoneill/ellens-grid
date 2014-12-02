@@ -21,7 +21,8 @@
   width: 100%;
 }
 
-.grid {
+[class^="grid-"],
+[class*="grid-"] {
   width: 100%;
   float: left;
 }
