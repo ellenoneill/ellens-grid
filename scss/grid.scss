@@ -3,14 +3,14 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-.ribbon {
-    + .ribbon > .gutter {
+.ribbon-container {
+    + .ribbon-container > .ribbon {
         margin-top: 0;
     }
-    &:first-child > .gutter {
+    &:first-child > .ribbon {
         margin-top: 0; // Unspacing the top of the first ribbon
     }
-    &:last-child > .gutter {
+    &:last-child > .ribbon {
         margin-bottom: 0; // Unspacing the bottom of the last ribbon
     }
 }
@@ -26,19 +26,19 @@
 }
 body,
 .restrainer,
-.container,
-.ribbon,
-.module,
-.gutter {
+.grid-container,
+.ribbon-container,
+.module-container,
+.module {
     &:before,
-    &:after { // Clearfix
+    &:after { // Clearfix + uncollapsing of margins
 	    content: ' '; // The space content is one way to avoid an Opera bug when the contenteditable attribute is included anywhere else in the document. Otherwise it causes space to appear at the top and bottom of elements that are clearfixed.
 	    display: table; // The use of table rather than block is only necessary if using :before to contain the top-margins of child elements.
         clear: both;
     }
 }
-.module {
-    > .gutter {
+.module-container {
+    > .module {
         > *:last-child,
         > *:last-child > *:last-child,
         > *:last-child > *:last-child > *:last-child {  // Unspacing the bottom of modules

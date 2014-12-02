@@ -1,44 +1,49 @@
 <!DOCTYPE html>
 <html lang="nl">
     <head>
-        <title>Example: With Sidebar – The Grid – A Digital Frontier</title>
+        <title>Example: With Sidebar – Ellen’s Grid</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../css/styles.css">
     </head>
     <body class="example">
-        <div class="ribbon">
-            <div class="gutter">
-                <div class="module">
-                    <div class="gutter">
-                        <p>.ribbon > .gutter > .module</p>
+        <div class="ribbon-container">
+            <div class="ribbon">
+                <div class="module-container">
+                    <div class="module gutter-outer">
+                        <p>.ribbon-container > .ribbon > .module</p>
                         <p>(header)</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="ribbon">
-            <div class="gutter">
+        <div class="ribbon-container">
+            <div class="ribbon">
                 <div class="restrainer">
-                    <div class="grid grid-1of3">
-                        <div class="module">
-                            <div class="gutter">
-                                <p>.ribbon + .ribbon > .gutter > .restrainer > .grid-1of3</p>
+                    <div class="grid-container">
+                        <div class="grid grid-1of3">
+                            <div class="module-container">
+                                <div class="module gutter-outer">
+                                    <p>.ribbon-container + .ribbon-container</p>
+                                    <p>> .ribbon > .restrainer > .grid-1of3</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="grid grid-1of3">
-                        <div class="module">
-                            <div class="gutter">
-                                <p>.ribbon + .ribbon > .gutter > .restrainer > .grid-1of3</p>
+                        <div class="grid grid-1of3">
+                            <div class="module-container">
+                                <div class="module gutter-outer">
+                                    <p>.ribbon-container + .ribbon-container</p>
+                                    <p>> .ribbon > .restrainer > .grid-1of3</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="grid grid-1of3">
-                        <div class="module">
-                            <div class="gutter">
-                                <p>.ribbon + .ribbon > .gutter > .restrainer > .grid-1of3</p>
+                        <div class="grid grid-1of3">
+                            <div class="module-container">
+                                <div class="module gutter-outer">
+                                    <p>.ribbon-container + .ribbon-container</p>
+                                    <p>> .ribbon > .restrainer > .grid-1of3</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -46,39 +51,39 @@
             </div>
         </div>
         <div class="restrainer">
-            <div class="container">
+            <div class="grid-container">
                 <div class="grid grid-2of3">
-                    <div class="module">
-                        <div class="gutter">
+                    <div class="module-container">
+                        <div class="module gutter-outer">
                             <p>.grid-2of3 > .module</p>
                         </div>
                     </div>
-                    <div class="container">
+                    <div class="grid-container">
                         <div class="grid grid-1of2">
-                            <div class="module">
-                                <div class="gutter">
-                                    <p>.grid-2of3 > .container > .grid-1of2</p>
+                            <div class="module-container">
+                                <div class="module gutter-outer">
+                                    <p>.grid-2of3 > .grid-container > .grid-1of2</p>
                                 </div>
                             </div>
                         </div>
                         <div class="grid grid-1of2">
-                            <div class="module">
-                                <div class="gutter">
-                                    <p>.grid-2of3 > .container > .grid-1of2</p>
+                            <div class="module-container">
+                                <div class="module gutter-outer">
+                                    <p>.grid-2of3 > .grid-container > .grid-1of2</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="grid grid-1of3">
-                    <div class="module">
-                        <div class="gutter">
+                    <div class="module-container">
+                        <div class="module gutter-outer">
                             <p>.grid-1of3 > .module</p>
                             <p>(sidebar)</p>
                         </div>
                     </div>
-                    <div class="module">
-                        <div class="gutter">
+                    <div class="module-container">
+                        <div class="module gutter-outer">
                             <p>.grid-1of3 > .module</p>
                             <p>(sidebar)</p>
                         </div>
@@ -86,12 +91,12 @@
                 </div>
             </div>
         </div>
-        <div class="ribbon">
-            <div class="gutter">
+        <div class="ribbon-container">
+            <div class="ribbon">
                 <div class="restrainer">
-                    <div class="module">
-                        <div class="gutter">
-                            <p>.ribbon > .gutter > .restrainer > .module</p>
+                    <div class="module-container">
+                        <div class="module gutter-outer">
+                            <p>.ribbon-container > .ribbon > .restrainer > .module</p>
                             <p>(footer)</p>
                         </div>
                     </div>
