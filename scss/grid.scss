@@ -25,12 +25,10 @@
     width: 100%;
     float: left;
 }
-body,
-.restrainer,
-.grid-container,
-.ribbon-container,
 .module-container,
-.module {
+.module
+{
+    clear: both;
     &:before,
     &:after { // Clearfix + uncollapsing of margins
 	    content: ' '; // The space content is one way to avoid an Opera bug when the contenteditable attribute is included anywhere else in the document. Otherwise it causes space to appear at the top and bottom of elements that are clearfixed.
@@ -58,7 +56,7 @@ body,
     .grid-3of5,
     .grid-4of5,
     .grid-1of6,
-    .grid-5of6{
+    .grid-5of6 {
         width: 50%;
     }
     [class^="grid-"],
