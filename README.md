@@ -1,4 +1,4 @@
-# Ellen’s Grid
+# Ellen’s Grid (README is not up to date yet)
 
 > The grid system is an aid, not a guarantee. It permits a number of possible uses and each designer can look for a solution appropriate to his personal style. But one must learn how to use the grid; it is an art that requires practice.
 >
