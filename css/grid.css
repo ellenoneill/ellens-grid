@@ -21,17 +21,29 @@
   width: 100%;
 }
 
-[class^="grid-"],
-[class*="grid-"] {
+.grid-1of2,
+.grid-1of3,
+.grid-2of3,
+.grid-1of4,
+.grid-3of4,
+.grid-1of5,
+.grid-2of5,
+.grid-3of5,
+.grid-4of5,
+.grid-1of6,
+.grid-5of6 {
   width: 100%;
   float: left;
 }
 
+.grid-container,
 .module-container,
 .module {
   clear: both;
 }
-.module-container:before, .module-container:after,
+.grid-container:before, .grid-container:after,
+.module-container:before,
+.module-container:after,
 .module:before,
 .module:after {
   content: ' ';
@@ -59,17 +71,43 @@
   .grid-5of6 {
     width: 50%;
   }
-
-  [class^="grid-"].offset-left,
-  [class*="grid-"].offset-left {
+  .grid-1of2.offset-left,
+  .grid-1of3.offset-left,
+  .grid-2of3.offset-left,
+  .grid-1of4.offset-left,
+  .grid-3of4.offset-left,
+  .grid-1of5.offset-left,
+  .grid-2of5.offset-left,
+  .grid-3of5.offset-left,
+  .grid-4of5.offset-left,
+  .grid-1of6.offset-left,
+  .grid-5of6.offset-left {
     margin-left: 50%;
   }
-  [class^="grid-"].offset-right,
-  [class*="grid-"].offset-right {
+  .grid-1of2.offset-right,
+  .grid-1of3.offset-right,
+  .grid-2of3.offset-right,
+  .grid-1of4.offset-right,
+  .grid-3of4.offset-right,
+  .grid-1of5.offset-right,
+  .grid-2of5.offset-right,
+  .grid-3of5.offset-right,
+  .grid-4of5.offset-right,
+  .grid-1of6.offset-right,
+  .grid-5of6.offset-right {
     margin-right: 50%;
   }
-  [class^="grid-"].offset-both,
-  [class*="grid-"].offset-both {
+  .grid-1of2.offset-both,
+  .grid-1of3.offset-both,
+  .grid-2of3.offset-both,
+  .grid-1of4.offset-both,
+  .grid-3of4.offset-both,
+  .grid-1of5.offset-both,
+  .grid-2of5.offset-both,
+  .grid-3of5.offset-both,
+  .grid-4of5.offset-both,
+  .grid-1of6.offset-both,
+  .grid-5of6.offset-both {
     margin-left: 25%;
     margin-right: 25%;
   }
@@ -128,7 +166,6 @@
   .grid-3of5 {
     width: 60%;
   }
-
   .grid-3of5.offset-left {
     margin-left: 40%;
   }
@@ -148,7 +185,6 @@
   .grid-3of4 {
     width: 75%;
   }
-
   .grid-3of4.offset-left {
     margin-left: 25%;
   }
@@ -167,7 +203,6 @@
   .grid-4of5 {
     width: 80%;
   }
-
   .grid-4of5.offset-left {
     margin-left: 20%;
   }
@@ -186,7 +221,6 @@
   .grid-5of6 {
     width: 83.333333%;
   }
-
   .grid-5of6.offset-left {
     margin-left: 16.666666%;
   }
