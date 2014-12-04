@@ -58,14 +58,3 @@ a {
         }
     }
 }
-
-@media only screen and (min-width: 80em) { // 1280px
-    .restrainer {
-        max-width: 1280px;
-        float: none;
-        clear: both;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 0;
-    }
-}

@@ -36,8 +36,7 @@
 }
 .grid-container,
 .module-container,
-.module
-{
+.module {
     clear: both;
     &:before,
     &:after { // Clearfix + uncollapsing of margins
