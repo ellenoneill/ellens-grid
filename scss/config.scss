@@ -10,7 +10,7 @@ $gutter-size: 10px;
     }
 }
 .restrainer {
-    max-width: 1280px;
+    max-width: 80em; // 1280px
 }
 .gutter-outer {
     margin: $gutter-size;
