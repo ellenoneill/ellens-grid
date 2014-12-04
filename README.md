@@ -7,21 +7,50 @@
 Grids are needed in order to arrange media and content elements such as text, images or video. It makes it easier to design clearly, consistently and with an eye to continuity. The grid is the foundation of any solid design.
 
 ## No rocket science
-This grid consists of basic responsive HTML and CSS, no pre-processing applied (yet). It's no rocket science, use it as an inspiration rather than straight out.
+My grid consists of basic responsive HTML and CSS, with a bit of Sass pre-processing. It's no rocket science ... In this latest version I tried to make the HTML as self-explanatory as possible, for the guys who refuse to read manuals ;)
 
-There are four features:
+These are the features:
 
+- Ribbon containers
+- Ribbons
 - Restrainers
-- Containers
+- Grid containers
+- Grids
+- Module containers
 - Modules
-- Gutters
+- Outer gutters
+- Inner gutters
 - Islands
 
+Which looks like this when all features are in use:
+
+    <div class="ribbon-container">
+        <div class="ribbon">
+            <div class="restrainer">
+                <div class="grid-container">
+                    <div class="grid-1of2">
+                        <div class="module-container">
+                            <div class="module gutter-outer gutter-inner island">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-1of2">
+                        <div class="module-container">
+                            <div class="module gutter-outer gutter-inner island">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 ### Demo
-[http://ellenoneill.github.io/the-grid](http://ellenoneill.github.io/the-grid)
+[http://ellenoneill.github.io/ellens-grid](http://ellenoneill.github.io/ellens-grid)
 
 ### Restrainers
-Todo
+The sole purpose of a restrainer is to restrain content to a custom width and to horizontally align this content. No further styling is to be applied.
 
 ### Containers
 The purpose of a container is to contain multiple grids. The container class can be applied to something more sematic then a `div`, like a `main` or `sidebar`. For better responsive control define a custom class on the wrapper.
