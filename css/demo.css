@@ -55,21 +55,6 @@ a {
 }
 
 .example .grid-container {
-  border: 1px solid #E88087;
-  margin: 0 0 -1px -1px;
-}
-.example .grid-container .grid-container {
-  border: 0;
-  margin: 0;
-}
-
-@media only screen and (min-width: 80em) {
-  .restrainer {
-    max-width: 1280px;
-    float: none;
-    clear: both;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
-  }
+  border: 1px dashed #E88087;
+  margin: -1px;
 }
