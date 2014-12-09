@@ -22,7 +22,7 @@ These are the features:
 - Inner gutter
 - Island
 
-Which looks like this when all features are in use:
+Which looks like the HTML below when all features are in use. I know ... kind of ugly, but your visitors won't inspect the source and at least it clearly tells developers what it does.
 
     <div class="ribbon-container">
         <div class="ribbon">
@@ -59,7 +59,7 @@ The `example-homepage` template features a homepage layout. Grid containers are 
 ### Stylesheets
 `grid.scss` contains all grid styling. You could use it as is or tweak the breakpoints and module widths to your liking.
 
-`config.scss` contains configuration settings, mainly the restrainer width and gutter sizes.
+`config.scss` contains configuration settings, mainly the restrainer width and gutter sizes, adjust to your liking.
 
 `demo.scss` sole purpose is to add some styling to demonstrate my grid. You can throw this out the window and add your own styling.
 
@@ -139,7 +139,7 @@ Only modules that need an inner gutter (padding), feature the `gutter-inner` cla
 I extended the `module` class by adding a modifier to it, the `island` class. This class is used to box in content, leaving it closed on all sides like an island. You can define a background color or border. This serves primarily as an example, you might as well use a custom class.
 
 ## Responsive
-This grid is fully responsive [^2] with a __mobile first__ [^3] approach. 
+This grid is responsive [^2] with a __mobile first__ [^3] approach. 
 
 [^2]: [Responsive Web Design by Ethan Marcotte](http://www.abookapart.com/products/responsive-web-design)  
 [^3]: [Mobile First by Luke Wroblewski](http://www.abookapart.com/products/mobile-first)
