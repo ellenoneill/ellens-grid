@@ -25,18 +25,20 @@ These are the features:
 Which looks like the HTML below when all features are in use. I know ... kind of ugly, but your visitors won't inspect the source and at least it clearly tells developers what it does.
 
     <div class="ribbon-container">
-        <div class="ribbon">
+        <div class="ribbon your-ribbon-class">
             <div class="restrainer">
-                <div class="grid-container">
+                <div class="grid-container your-grid-container-class">
                     <div class="grid-1of2">
                         <div class="module-container">
-                            <div class="module gutter-outer gutter-inner island">
+                            <div class="module gutter-outer gutter-inner island your-module-class">
+                            	...
                             </div>
                         </div>
                     </div>
                     <div class="grid-1of2">
                         <div class="module-container">
-                            <div class="module gutter-outer gutter-inner island">
+                            <div class="module gutter-outer gutter-inner island your-module-class">
+                            	...
                             </div>
                         </div>
                     </div>
