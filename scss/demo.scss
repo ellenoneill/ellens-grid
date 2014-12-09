@@ -30,12 +30,12 @@ a {
     }
 }
 .module {
-    min-height: 125px;
+    min-height: 128px;
     .module-container > & {
-        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAKUlEQVQIW2P8s2LufwYgYIlIZgTRMMCIUwJZFYoOZA6ybhRzcUog6wYAou4QBwnMcSoAAAAASUVORK5CYII=);
+        background-image: url(../demo/img/dots-dark.svg);
     }
     .ribbon .module-container > & {
-        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAKUlEQVQIW2P8dXzLfwYgYLP0YQTRMMCIUwJZFYoOZA6ybhRzcUog6wYAqW4QB24ZwhEAAAAASUVORK5CYII=);
+        background-image: url(../demo/img/dots-light.svg);
     }
     &.island {
         background-color: #FAC7B4;
