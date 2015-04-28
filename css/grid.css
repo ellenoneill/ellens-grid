@@ -35,12 +35,16 @@
   float: left;
 }
 
+.ribbon-container,
 .grid-container,
 .module-container,
 .module {
   clear: both;
 }
-.grid-container:before, .grid-container:after,
+.ribbon-container:before,
+.ribbon-container:after,
+.grid-container:before,
+.grid-container:after,
 .module-container:before,
 .module-container:after,
 .module:before,
