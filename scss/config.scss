@@ -47,10 +47,10 @@ $gutter-size: 10px;
     }
 }
 
-@media only screen and (min-width: 85em) { // 1360px
+@media only screen and (min-width: 85em) { // 1360px = 1280px (restrainer max-with) + 30px (ribbon left gutter-size) + 30px (ribbon right gutter-size) + 10px (left gutter-outer) + 10px (right gutter-outer)
     .ribbon-container {
         > .ribbon {
-            padding: $gutter-size*3;
+            padding: $gutter-size*3; // Same as ribbon top gutter-size
         }
     }
 }
