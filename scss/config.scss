@@ -21,7 +21,7 @@ $gutter-size: 10px;
 
 @media only screen and (min-width: 30em) { // 480px
     body {
-        padding: 0 $gutter-size;
+        padding: 0 $gutter-size; // To create the same gutters left and right as the gutters in-between
     }
     .ribbon-container {
         margin: 0 -$gutter-size;
