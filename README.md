@@ -2,7 +2,7 @@
 
 > The grid system is an aid, not a guarantee. It permits a number of possible uses and each designer can look for a solution appropriate to his personal style. But one must learn how to use the grid; it is an art that requires practice.
 >
-> — Josef Müller-Brockma
+> — Josef Müller-Brockmann
 
 Grids are needed in order to arrange media and content elements such as text, images or video. It makes it easier to design clearly, consistently and with an eye to continuity. The grid is the foundation of any solid design.
 
