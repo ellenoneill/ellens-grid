@@ -24,7 +24,12 @@ $gutter-size: 10px;
         padding: 0 $gutter-size; // To create the same gutters left and right as the gutters in-between
     }
     .ribbon-container {
-        margin: 0 -$gutter-size;
+        margin: -$gutter-size;
+        body > &:first-child,
+        body > &:last-child {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
         > .ribbon {
             padding: $gutter-size*2 $gutter-size;
             margin: $gutter-size*2 0;

@@ -26,6 +26,11 @@
   .ribbon-container {
     margin: -10px;
   }
+  body > .ribbon-container:first-child,
+  body > .ribbon-container:last-child {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
   .ribbon-container > .ribbon {
     padding: 20px 10px;
     margin: 20px 0;
