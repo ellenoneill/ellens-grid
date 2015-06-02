@@ -1,5 +1,5 @@
 html {
-    background-color: #FAC7B4;
+    background-color: #FFF;
 }
 body {
     font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
@@ -23,10 +23,10 @@ a {
 }
 .ribbon-container {
     .ribbon {
-        background-color: rgba(232,128,135,.5);
+        background-color: rgba(0,0,0,.5);
     }
     + .ribbon-container > .ribbon {
-        background-color: rgba(232,128,135,.3);
+        background-color: rgba(0,0,0,.3);
     }
 }
 .module {
@@ -38,9 +38,9 @@ a {
         background-image: url(../demo/img/dots-light.svg);
     }
     &.island {
-        background-color: #FAC7B4;
+        background-color: #FFF;
         background-image: none;
-        border: 1px solid #E88087;
+        border: 1px solid #999;
         box-shadow: 0 2px 3px 0 rgba(0,0,0,.07);
     }
     .island {

@@ -1,5 +1,5 @@
 html {
-  background-color: #FAC7B4;
+  background-color: #FFF;
 }
 
 body {
@@ -28,10 +28,10 @@ a {
 }
 
 .ribbon-container .ribbon {
-  background-color: rgba(232, 128, 135, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .ribbon-container + .ribbon-container > .ribbon {
-  background-color: rgba(232, 128, 135, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .module {
@@ -44,9 +44,9 @@ a {
   background-image: url(../demo/img/dots-light.svg);
 }
 .module.island {
-  background-color: #FAC7B4;
+  background-color: #FFF;
   background-image: none;
-  border: 1px solid #E88087;
+  border: 1px solid #999;
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.07);
 }
 .module .island {
