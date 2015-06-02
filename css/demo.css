@@ -30,15 +30,19 @@ a {
 .ribbon-container .ribbon {
   background-color: rgba(0, 0, 0, 0.1);
 }
+.ribbon-container .ribbon .module {
+  background-image: url(../demo/img/dots-dark.svg);
+}
 .ribbon-container + .ribbon-container > .ribbon {
   background-color: rgba(0, 0, 0, 0.05);
+}
+.ribbon-container + .ribbon-container > .ribbon .module {
+  background-image: url(../demo/img/dots-light.svg);
 }
 
 .module {
   min-height: 128px;
-}
-.module-container > .module {
-  background-image: url(../demo/img/dots.svg);
+  background-image: url(../demo/img/dots-light.svg);
 }
 .module.island {
   background-color: #FFF;

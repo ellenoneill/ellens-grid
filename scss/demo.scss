@@ -24,16 +24,21 @@ a {
 .ribbon-container {
     .ribbon {
         background-color: rgba(0,0,0,.1);
+        .module {
+            background-image: url(../demo/img/dots-dark.svg);
+        }
+    }
     }
     + .ribbon-container > .ribbon {
         background-color: rgba(0,0,0,.05);
+        .module {
+            background-image: url(../demo/img/dots-light.svg);
+        }
     }
 }
 .module {
     min-height: 128px;
-    .module-container > & {
-        background-image: url(../demo/img/dots.svg);
-    }
+    background-image: url(../demo/img/dots-light.svg);
     &.island {
         background-color: #FFF;
         background-image: none;
