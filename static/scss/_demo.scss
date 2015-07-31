@@ -25,19 +25,19 @@ a {
     .ribbon {
         background-color: rgba(0,0,0,.1);
         .module {
-            background-image: url(../img/dots-dark.svg);
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzIiBoZWlnaHQ9IjMiPgo8cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSIjOTk5Ij48L3JlY3Q+Cjwvc3ZnPg==");
         }
     }
     + .ribbon-container > .ribbon {
         background-color: rgba(0,0,0,.05);
         .module {
-            background-image: url(../img/dots-light.svg);
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzIiBoZWlnaHQ9IjMiPgo8cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSIjY2NjIj48L3JlY3Q+Cjwvc3ZnPg==");
         }
     }
 }
 .module {
     min-height: 128px;
-    background-image: url(../img/dots-light.svg);
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzIiBoZWlnaHQ9IjMiPgo8cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSIjY2NjIj48L3JlY3Q+Cjwvc3ZnPg==");
     &.island {
         background-color: #FFF;
         background-image: none;

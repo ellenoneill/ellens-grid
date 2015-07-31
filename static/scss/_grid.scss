@@ -4,15 +4,28 @@
     box-sizing: border-box;
 }
 .ribbon-container {
-    + .ribbon-container > .ribbon {
-        margin-top: 0;
+    > .ribbon {
+        margin: $gutter-size 0;
+        padding: $gutter-size 0;
+    }
+    + .ribbon-container {
+        margin-top: -$gutter-size; // Close gap between ribbon containers
+        > .ribbon {
+            margin-top: 0;
+        }
     }
     &:first-child > .ribbon {
         margin-top: 0; // Unspacing the top of the first ribbon
     }
     &:last-child > .ribbon {
-        margin-bottom: 0; // Unspacing the bottom of the last ribbon
+        margin-bottom: 0; // Unspacing the bottom of the last ribbon, most likely your footer
     }
+}
+.gutter-outer {
+    margin: $gutter-size;
+}
+.gutter-inner {
+    padding: $gutter-size;
 }
 .restrainer {
     margin-left: auto;
@@ -34,6 +47,7 @@
     float: left;
 }
 body,
+.restrainer,
 .ribbon-container,
 .grid-container,
 .module-container,
@@ -56,6 +70,23 @@ body,
     }
 }
 @media only screen and (min-width: 30em) { // 480px
+    body {
+        padding: $gutter-size; // To create the same gutter size on the edges as in between modules
+    }
+    .ribbon-container {
+        margin-left: -$gutter-size; // Close body padding gap
+        margin-right: -$gutter-size; // Close body padding gap
+        body > &:first-child {
+            margin-top: -$gutter-size; // Close body padding gap
+        }
+        body > &:last-child { // Most likely your footer
+            margin-bottom: -$gutter-size; // Close body padding gap
+        }
+        > .ribbon {
+            padding-left: $gutter-size; // Compensation for closing body padding gap to align with modules
+            padding-right: $gutter-size; // Compensation for closing body padding gap to align with modules
+        }
+    }
     .grid-1of2,
     .grid-1of3,
     .grid-2of3,
