@@ -5,3 +5,4 @@
 *.rar
 *.map
 config.codekit
+/prepros.cfg
