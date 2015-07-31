@@ -32,7 +32,7 @@ a {
 }
 
 .ribbon-container .ribbon .module {
-  background-image: url(../demo/img/dots-dark.svg);
+  background-image: url(../img/dots-dark.svg);
 }
 
 .ribbon-container + .ribbon-container > .ribbon {
@@ -40,12 +40,12 @@ a {
 }
 
 .ribbon-container + .ribbon-container > .ribbon .module {
-  background-image: url(../demo/img/dots-light.svg);
+  background-image: url(../img/dots-light.svg);
 }
 
 .module {
   min-height: 128px;
-  background-image: url(../demo/img/dots-light.svg);
+  background-image: url(../img/dots-light.svg);
 }
 
 .module.island {
